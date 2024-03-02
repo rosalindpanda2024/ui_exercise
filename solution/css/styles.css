@@ -1,0 +1,150 @@
+  .roboto-thin {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .roboto-black {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .roboto-thin-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .roboto-light-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .roboto-regular-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .roboto-medium-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .roboto-bold-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .roboto-black-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+  
+
+  .title-text {
+    font-size: 32px;
+  }
+
+  .sub-title-text {
+    font-size: 16px;
+  }
+
+  .debit-control {
+    display: none;
+  } 
+
+  .make-payment-button {
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+
+  .help-text {
+    font-size: 14px;
+  }
+
+  .split-controls {
+    display: table;
+    width: 100%;
+  }
+
+  .split-controls .form-control-wrapper {
+    display: table-cell;
+    vertical-align: top;
+    width: 50%;
+  }
+
+  .form-control-label {
+    font-size: 12px;
+  }
+
+  .bg-grey {
+    background: #efefef;
+  }
+  .img-responsive {
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+  }
+  .make-payment-container {
+    max-width: 900px; 
+  }
+
+  .textcontrol-style {
+    border: 0px solid transparent;
+  }
+
+  .form-check-label {
+    font-size: 14px;
+  }
+
+  .disp-table {
+    display: table;
+    width:100%;
+    height: 100%;
+  }
+  .disp-table-cell {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+  } 
+
+  .make-payment-container .row:nth-child(2), .make-payment-container .row:nth-child(3) {
+    border: 1px solid #ccc;
+  }
+
+  .px-0 .form-control-wrapper {
+    border-bottom: 1px solid #ccc;
+    padding: 3px 10px 5px;
+  }
+
