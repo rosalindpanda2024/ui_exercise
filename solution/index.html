@@ -13,93 +13,96 @@
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
     </head>    
     <body>
-        <div class="container make-payment-container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="loan-payment-header-wrapper pt-3">
-                        <h3 class="roboto-bold title-text">One-time Loan Payment</h3>    
-                        <p class="sub-title-text roboto-regular">Fill out the form below to complete your payment.</p>
-                    </div>
-                </div>                 
-            </div>    
-            <div class="row">
-                <div class="col-12">
-                    <div class="form-control-wrapper">
-                        <label class="form-control-label roboto-bold">Loan Account Number</label>    
-                        <input type="text" class="form-control textcontrol-style roboto-regular" />
-                    </div>    
-                </div>     
-            </div>
-            <div class="row">
-                <div class="col-md-6 px-0">
-                    <div class="form-control-wrapper">
-                        <label class="form-control-label roboto-bold">Type of Account:</label>    
-                        <div class="input-control-wrapper">
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="accountType" id="checking" value="checking" checked>
-                                <label class="form-check-label roboto-regular" for="checking">Checking</label>
-                              </div>
-                              <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="accountType" id="debitCard" value="debitCard">
-                                <label class="form-check-label roboto-regular" for="debitCard">Debit Card</label>
-                              </div>    
+        <form class="one-time-loan-payment-form">
+            <div class="container make-payment-container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="loan-payment-header-wrapper pt-3">
+                            <h3 class="roboto-bold title-text">One-time Loan Payment</h3>    
+                            <p class="sub-title-text roboto-regular">Fill out the form below to complete your payment.</p>
                         </div>
-                    </div> 
-                    <div class="form-control-wrapper checking-control">
-                        <label class="form-control-label roboto-bold">Routing Number</label>    
-                        <input type="text" class="form-control textcontrol-style roboto-regular" />
-                    </div> 
-                    <div class="form-control-wrapper checking-control">
-                        <label class="form-control-label roboto-bold">Bank Account Number</label>    
-                        <input type="text" class="form-control textcontrol-style roboto-regular" />
-                    </div> 
-                    <div class="form-control-wrapper checking-control">
-                        <label class="form-control-label roboto-bold">Confirm Bank Account Number</label>    
-                        <input type="text" class="form-control textcontrol-style roboto-regular" />
-                    </div> 
-                    <div class="form-control-wrapper debit-control">
-                        <label class="form-control-label roboto-bold">Card Number</label>    
-                        <input type="text" class="form-control textcontrol-style roboto-regular" />
-                    </div> 
-                    <div class="form-control-wrapper debit-control">
-                        <label class="form-control-label roboto-bold">Name On Card</label>    
-                        <input type="text" class="form-control textcontrol-style roboto-regular" />
-                    </div> 
-                    <div class="split-controls">
-                        <div class="form-control-wrapper debit-control">
-                            <label class="form-control-label roboto-bold">Expiration Date</label>    
-                            <input type="text" class="form-control textcontrol-style roboto-regular" />
-                        </div> 
-                        <div class="form-control-wrapper debit-control">
-                            <label class="form-control-label roboto-bold">CVV</label>    
-                            <input type="text" class="form-control textcontrol-style roboto-regular" />
-                        </div> 
-                    </div>
-                </div>
-                <div class="col-md-6 bg-grey">
-                    <div class="disp-table">
-                        <div class="disp-table-cell">
-                            <div class="checking-control">
-                                <div class="text-center p-3">
-                                    <h4 class="roboto-medium help-text">Where can I find the routing and account number?</h4>    
-                                    <img class="img-responsive" src="images/check.png" />
-                                </div>
-                            </div>
-                            <div class="debit-control">
-                                <div class="text-center p-3">
-                                    <h4 class="roboto-medium help-text">Where can I find the CVV number?</h4>    
-                                    <img class="img-responsive" src="images/cvv.png" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <button type="button" class="btn btn-success roboto-bold make-payment-button">Make Payment</button>    
+                    </div>                 
                 </div>    
+                <div class="row">
+                    <div class="col-12">
+                        <div class="form-control-wrapper">
+                            <label class="form-control-label roboto-bold">Loan Account Number</label>    
+                            <input type="text" class="form-control textcontrol-style account-number number-control roboto-regular" />
+                        </div>    
+                    </div>     
+                </div>
+                <div class="row">
+                    <div class="col-md-6 px-0">
+                        <div class="form-control-wrapper">
+                            <label class="form-control-label roboto-bold">Type of Account:</label>    
+                            <div class="input-control-wrapper">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="accountType" id="checking" value="checking" checked>
+                                    <label class="form-check-label roboto-regular" for="checking">Checking</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="accountType" id="debitCard" value="debitCard">
+                                    <label class="form-check-label roboto-regular" for="debitCard">Debit Card</label>
+                                </div>    
+                            </div>
+                        </div> 
+                        <div class="form-control-wrapper checking-control">
+                            <label class="form-control-label roboto-bold">Routing Number</label>    
+                            <input type="text" class="form-control routing-number textcontrol-style number-control roboto-regular" />
+                        </div> 
+                        <div class="form-control-wrapper checking-control">
+                            <label class="form-control-label roboto-bold">Bank Account Number</label>    
+                            <input type="text" class="form-control bank-account-number textcontrol-style number-control roboto-regular" />
+                        </div> 
+                        <div class="form-control-wrapper checking-control">
+                            <label class="form-control-label roboto-bold">Confirm Bank Account Number</label>    
+                            <input type="text" class="form-control confirm-bank-account-number textcontrol-style number-control roboto-regular" />
+                        </div> 
+                        <div class="form-control-wrapper debit-control">
+                            <label class="form-control-label roboto-bold">Card Number</label>    
+                            <input type="text" class="form-control textcontrol-style number-control roboto-regular" />
+                        </div> 
+                        <div class="form-control-wrapper debit-control">
+                            <label class="form-control-label roboto-bold">Name On Card</label>    
+                            <input type="text" class="form-control textcontrol-style roboto-regular" />
+                        </div> 
+                        <div class="split-controls">
+                            <div class="form-control-wrapper debit-control">
+                                <label class="form-control-label roboto-bold">Expiration Date</label>    
+                                <input type="text" class="form-control textcontrol-style roboto-regular" />
+                            </div> 
+                            <div class="form-control-wrapper debit-control">
+                                <label class="form-control-label roboto-bold">CVV</label>    
+                                <input type="text" class="form-control cvv number-control textcontrol-style roboto-regular" />
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="col-md-6 bg-grey px-0">
+                        <div class="disp-table">
+                            <div class="disp-table-cell">
+                                <div class="checking-control">
+                                    <div class="text-center p-3">
+                                        <h4 class="roboto-medium help-text">Where can I find the routing and account number?</h4>    
+                                        <img class="img-responsive" src="images/check.png" />
+                                    </div>
+                                </div>
+                                <div class="debit-control">
+                                    <div class="text-center p-3">
+                                        <h4 class="roboto-medium help-text">Where can I find the CVV number?</h4>    
+                                        <img class="img-responsive" src="images/cvv.png" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 pt-3 px-0">
+                        <button type="submit" class="btn btn-success roboto-bold make-payment-button">Make Payment</button>    
+                    </div>    
+                </div>
             </div>
-        </div>
+        </form>
+        <script src="js/custom.js"></script>
     </body>
 </html>
